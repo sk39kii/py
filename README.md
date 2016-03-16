@@ -2,10 +2,19 @@
 
 あれこれ貯めていきますバイ
 
-### isBinary.py バイナリ判定
+## isBinary.py バイナリ判定
 
 簡易バイナリ判定を行います。  
 
+<!-- more -->
+
+### 使い方
+
+```python
+python isBinary.py [TargetFile]
+```
+
+### 内容
 MIMEタイプを取得して判断します。
 * imageやofficeの場合はTrue(=Binary)。   
 * textやcsv(application/vnd.ms-excel)の場合はFalse(=Not Binary)  
