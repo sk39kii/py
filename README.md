@@ -10,8 +10,9 @@ MIMEタイプを取得して判断します。
 * imageやofficeの場合はTrue(=Binary)。   
 * textやcsv(application/vnd.ms-excel)の場合はFalse(=Not Binary)  
 
-MIMEが取得できない場合(L21〜L37)は、  
+MIMEが取得できない場合(L21〜L37)は以下で判定してます。
+(使うシーンに合わせて変えてください)  
 * ファイルの中身でエンコードが取得しエンコードが不明の場合はBinary
-* ファイルの中身に00H〜08Hの文字があればBinary
+* ファイルの中身にASCIIコードの00H-08Hの文字があればBinary
 
-※エンコードのconfidence（信頼性）の値は見てない(今のところ)
+※エンコードのconfidence（信頼性）の値はとくに見てません
